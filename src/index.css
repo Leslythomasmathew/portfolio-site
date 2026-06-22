@@ -1,0 +1,182 @@
+/* Import Outfit and Space Grotesk from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Slate-Blue & Teal Theme (Dark Background) */
+  --bg-dark: 220 15% 8%;       /* Very dark slate background */
+  --bg-card: 220 15% 12%;      /* Clean dark slate for cards */
+  --text-light: 0 0% 98%;      /* Soft white text */
+  --text-muted: 215 15% 65%;   /* Soft grey text */
+  
+  --primary: 217 75% 55%;      /* Slate-Blue accent (highly visible on dark) */
+  --secondary: 192 65% 50%;    /* Steel-Teal accent */
+  
+  --border-light: 220 15% 18%; /* Dark borders */
+  --border-glass: 255 255% 255% / 0.04;
+
+  --transition-smooth: all 0.3s ease;
+  --font-sans: 'Outfit', sans-serif;
+  --font-mono: 'Space Grotesk', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: hsl(var(--bg-dark));
+  color: hsl(var(--text-light));
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--bg-dark));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border-light));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
+/* Layout Utilities */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.section {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.section-title {
+  font-family: var(--font-mono);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+  color: hsl(var(--text-light));
+  display: inline-block;
+  border-bottom: 2px solid hsl(var(--primary));
+  padding-bottom: 0.5rem;
+}
+
+/* Flat dark-theme card design */
+.glass-card {
+  background: hsl(var(--bg-card));
+  border: 1px solid hsl(var(--border-light));
+  border-radius: 12px;
+  transition: var(--transition-smooth);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: hsl(var(--primary) / 0.5);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Interactive Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  border: none;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: hsl(var(--primary));
+  color: white;
+}
+
+.btn-primary:hover {
+  background: hsl(var(--primary) / 0.85);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: hsl(var(--text-light));
+  border: 1px solid hsl(var(--border-light));
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.02);
+  border-color: hsl(var(--text-light) / 0.5);
+  transform: translateY(-1px);
+}
+
+/* Glow Backgrounds disabled */
+.glow-bg {
+  display: none;
+}
+
+/* Text Formatting */
+.gradient-text {
+  color: hsl(var(--text-light));
+}
+
+.accent-text {
+  color: hsl(var(--primary));
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+}
+
+.animate-fade-in-up.active {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+  .section-title {
+    font-size: 1.75rem;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+}
