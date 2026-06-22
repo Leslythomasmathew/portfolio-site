@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Mail, Send, Copy, Check } from 'lucide-react';
-import { Github, Linkedin, Twitter } from './BrandIcons';
+import { Github, Linkedin } from './BrandIcons';
 import { portfolioData } from '../data/portfolioData';
 
 export default function Contact() {
@@ -72,9 +72,6 @@ export default function Contact() {
                 </a>
                 <a href={portfolioData.profile.socials.linkedin} target="_blank" rel="noreferrer" className="social-bubble-link" aria-label="LinkedIn">
                   <Linkedin size={20} />
-                </a>
-                <a href={portfolioData.profile.socials.twitter} target="_blank" rel="noreferrer" className="social-bubble-link" aria-label="Twitter">
-                  <Twitter size={20} />
                 </a>
               </div>
             </div>

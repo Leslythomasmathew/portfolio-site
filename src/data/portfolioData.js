@@ -9,7 +9,6 @@ export const portfolioData = {
     socials: {
       github: "https://github.com/Leslythomasmathew",
       linkedin: "https://www.linkedin.com/in/lesly-mathew-149898327",
-      twitter: "#",
     },
     resumeUrl: "#",
   },
