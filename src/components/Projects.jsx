@@ -231,7 +231,7 @@ export default function Projects() {
         .filter-badge:hover {
           color: hsl(var(--text-light));
           border-color: hsl(var(--text-light) / 0.4);
-          background: rgba(255, 255, 255, 0.06);
+          background: rgba(0, 0, 0, 0.04);
         }
 
         .filter-badge.active {
@@ -260,7 +260,7 @@ export default function Projects() {
           width: 100%;
           padding-bottom: 50%; /* 2:1 Aspect Ratio */
           overflow: hidden;
-          background: #0f111a;
+          background: #f8fafc;
           border-bottom: 1px solid hsl(var(--border-light));
         }
 
@@ -284,7 +284,7 @@ export default function Projects() {
           left: 0;
           width: 100%;
           height: 100%;
-          background: rgba(10, 12, 22, 0.75);
+          background: rgba(255, 255, 255, 0.85);
           backdrop-filter: blur(4px);
           display: flex;
           align-items: center;

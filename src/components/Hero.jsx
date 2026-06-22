@@ -115,7 +115,7 @@ export default function Hero() {
         let y = Math.random() * (canvas.height - size * 2 - size * 2) + size * 2;
         let directionX = (Math.random() * 1) - 0.5;
         let directionY = (Math.random() * 1) - 0.5;
-        let color = 'rgba(255, 255, 255, 0.08)'; // Subtly transparent white
+        let color = 'rgba(0, 0, 0, 0.08)'; // Subtly transparent black
         
         particlesArray.push(new Particle(x, y, directionX, directionY, size, color));
       }
@@ -130,7 +130,7 @@ export default function Hero() {
           
           if (distance < (canvas.width / 9) * (canvas.height / 9)) {
             opacityValue = 1 - (distance / 20000);
-            ctx.strokeStyle = `rgba(255, 255, 255, ${opacityValue * 0.04})`; // Extremely soft lines
+            ctx.strokeStyle = `rgba(0, 0, 0, ${opacityValue * 0.04})`; // Extremely soft dark lines
             ctx.lineWidth = 0.5;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
