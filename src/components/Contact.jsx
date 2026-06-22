@@ -240,7 +240,7 @@ export default function Contact() {
 
         .contact-info-card:hover .copy-btn {
           color: hsl(var(--text-light));
-          background: rgba(0, 0, 0, 0.05);
+          background: rgba(255, 255, 255, 0.05);
         }
 
         .success-color {
@@ -291,7 +291,7 @@ export default function Contact() {
           height: 44px;
           border-radius: 50%;
           border: 1px solid hsl(var(--border-light));
-          background: rgba(0, 0, 0, 0.02);
+          background: rgba(255, 255, 255, 0.02);
           display: flex;
           align-items: center;
           justify-content: center;

@@ -109,7 +109,7 @@ export default function Navbar() {
         }
 
         .navbar-wrapper.scrolled {
-          background: rgba(255, 255, 255, 0.85);
+          background: rgba(15, 12, 30, 0.75);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
           border-color: hsl(var(--border-light));
@@ -201,7 +201,7 @@ export default function Navbar() {
         .social-icon-link:hover {
           color: hsl(var(--text-light));
           border-color: hsl(var(--border-light));
-          background: rgba(0, 0, 0, 0.03);
+          background: rgba(255, 255, 255, 0.03);
         }
 
         .nav-contact-btn {
@@ -225,7 +225,7 @@ export default function Navbar() {
           right: -100%;
           width: 100%;
           height: 100vh;
-          background: rgba(255, 255, 255, 0.98);
+          background: rgba(15, 12, 30, 0.98);
           backdrop-filter: blur(20px);
           z-index: 999;
           transition: var(--transition-smooth);

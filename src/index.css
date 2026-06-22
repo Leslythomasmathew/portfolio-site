@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-  /* White Background Theme Palette */
-  --bg-dark: 0 0% 100%;        /* Pure White Background */
-  --bg-card: 210 20% 98%;      /* Very soft slate-grey for cards */
-  --text-light: 222 47% 11%;   /* Dark slate/charcoal text for high contrast */
-  --text-muted: 215 16% 47%;   /* Balanced grey for secondary text */
+  /* Premium Dark Violet Theme Palette */
+  --bg-dark: 260 35% 5%;       /* Deep Dark Violet Background */
+  --bg-card: 260 25% 9%;       /* Slightly lighter deep violet for cards */
+  --text-light: 260 50% 98%;   /* Soft lavender-white text */
+  --text-muted: 260 15% 68%;   /* Balanced lavender-grey text */
   
-  --primary: 250 89% 60%;      /* Elegant Indigo/Violet (high contrast on white) */
-  --secondary: 192 65% 45%;    /* Crisp Steel-Teal */
+  --primary: 270 95% 65%;      /* Neon Purple/Violet */
+  --secondary: 295 85% 65%;    /* Orchid/Magenta accent */
   
-  --border-light: 220 15% 90%; /* Soft light borders */
-  --border-glass: 0 0% 0% / 0.05;
+  --border-light: 260 20% 16%; /* Soft dark purple borders */
+  --border-glass: 255 255% 255% / 0.04;
 
   --transition-smooth: all 0.3s ease;
   --font-sans: 'Outfit', sans-serif;
@@ -83,7 +83,7 @@ button, input, textarea {
   padding-bottom: 0.5rem;
 }
 
-/* Flat light-theme card design */
+/* Flat dark-theme card design */
 .glass-card {
   background: hsl(var(--bg-card));
   border: 1px solid hsl(var(--border-light));
@@ -94,7 +94,7 @@ button, input, textarea {
 .glass-card:hover {
   transform: translateY(-2px);
   border-color: hsl(var(--primary) / 0.5);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
 }
 
 /* Interactive Buttons */
@@ -129,7 +129,7 @@ button, input, textarea {
 }
 
 .btn-secondary:hover {
-  background: rgba(0, 0, 0, 0.02);
+  background: rgba(255, 255, 255, 0.02);
   border-color: hsl(var(--text-light) / 0.5);
   transform: translateY(-1px);
 }
